@@ -5,9 +5,11 @@ class CreateStocks < ActiveRecord::Migration[7.0]
     reversible do |dir|
       dir.up do
         create_table :stocks do |t|
+          t.string :company
           t.integer :price
           t.integer :investment
           t.integer :profit
+          t.date :opening_date
           t.references :portfolio, foreign_key: true
 
           t.timestamps

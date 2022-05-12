@@ -21,9 +21,11 @@ ActiveRecord::Schema[7.0].define(version: 20_220_512_195_217) do
   end
 
   create_table 'stocks', force: :cascade do |t|
+    t.string 'company'
     t.integer 'price'
     t.integer 'investment'
     t.integer 'profit'
+    t.date 'opening_date'
     t.bigint 'portfolio_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
