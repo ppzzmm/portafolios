@@ -13,6 +13,7 @@ describe Portfolios::Details do
                                                   end_date: '2022/01/02' })
         expect(result.success?).to be(true)
         expect(result.object[:profit]).to eq 10
+        expect(result.object[:annualized_return]).to eq 100
       end
     end
 
