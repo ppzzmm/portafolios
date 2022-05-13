@@ -41,6 +41,15 @@ To test the project in your local environment only you have to exec the next com
 ```bash
 $ make start
 ```
+## CI/CD
+The pipeline of Continuous integration and Continuous delivery (CI/CD) runs in SemaphoreCI. The pipeline of CI contemplates 2 parts:
+<ol>
+<li>Install dependencies</li>
+<li>Code analysis</li>
+</ol>
+
+![Semaphore](./img/semaphore.png)
+
 ## Tests
 The testing is with [Rspec](https://rspec.info/), if you want to exec the test suite, only you have to exec the next command:
 ```bash
