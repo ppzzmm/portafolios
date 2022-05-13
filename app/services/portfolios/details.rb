@@ -37,7 +37,7 @@ module Portfolios
     end
 
     def annualized_return
-      (stocks.sum(:price) - stocks.sum(:investment)) / stocks.sum(:investment) * 100
+      (stocks.sum(:price) - stocks.sum(:investment)).to_f / stocks.sum(:investment).to_f * 100.0
     end
 
     def stocks
